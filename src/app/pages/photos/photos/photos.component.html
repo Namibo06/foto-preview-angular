@@ -1,0 +1,9 @@
+<div class="photos-container">
+  <input type="file" multiple (change)="onFileSelected($event)">
+<div *ngFor="let url of previewUrls; let i = index">
+  <img *ngIf="url" [src]="url" alt="Preview" width="100" height="100">
+  <button (click)="removePhoto(i)">Remover</button>
+  <input type="file" (change)="replacePhoto(i, $event)">
+</div>
+<button (click)="uploadPhoto()">Enviar</button>
+</div>

@@ -1,0 +1,64 @@
+.photos2-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  padding: 10px 20px;
+}
+
+picture{
+  display: flex;
+  flex-direction: row;
+}
+
+.images{
+  margin-left: 30px;
+  border: 1px solid #444;
+  min-width: 280px;
+  max-width: 280px;
+  max-height: 330px;
+  background-color: #cccccc9a;
+  position: relative;
+}
+
+img{
+  z-index: 10;
+  width: auto;
+  max-width: 280px;
+  height: auto;
+  max-height: 330px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+label[for=replace]{
+  border: 1px solid #444;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 0px;
+}
+
+button.remove{
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  right: 0px;
+}
+
+input#replace{
+  display: none;
+}
+
+button.btn_more{
+  min-height: 30px;
+  margin-left: 15px;
+  padding: 5px 8px;
+  min-width: 120px;
+}

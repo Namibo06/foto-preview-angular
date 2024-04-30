@@ -1,0 +1,13 @@
+<div class="photos2-container">
+  <picture>
+    <div class="images" *ngFor="let url of previewUrls; let i = index">
+      <img [src]="url" width="100" height="100">
+      <button class="remove" (click)="removePhoto(i)">Remover</button>
+
+      <label for="replace{{i}}">+</label>
+      <input type="file" id="replace{{i}}" (change)="handleReplacePhoto($event, i)">
+    </div>
+  </picture>
+
+  <button class="btn_more" (click)="addInput()">Adicionar Foto</button>
+</div>
