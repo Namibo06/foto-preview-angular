@@ -5,7 +5,7 @@
       <button class="remove" (click)="removePhoto(i)">Remover</button>
 
       <label for="replace{{i}}">+</label>
-      <input type="file" id="replace{{i}}" (change)="handleReplacePhoto($event, i)">
+      <input class="atualizar-foto" type="file" id="replace{{i}}" (change)="handleReplacePhoto($event, i)">
     </div>
   </picture>
 
